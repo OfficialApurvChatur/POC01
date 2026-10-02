@@ -19,7 +19,7 @@ Proof of Concept - Proof of Concept - Node & React Setup
 ### 02. Low Level Design (LLD)
 
 #### 02.01. Git Branching & PR Strategies LLD
-<!-- ```mermaid
+```mermaid
   sequenceDiagram
     actor Developer
     participant feature/*
@@ -37,7 +37,7 @@ Proof of Concept - Proof of Concept - Node & React Setup
     stage -->> prod : merge
     prod -->> develop : merge
     develop --> Developer : pull
-``` -->
+```
 
 #### 02.02. Project Overview LLD
 
