@@ -40,6 +40,20 @@ Proof of Concept - Proof of Concept - Node & React Setup
 ```
 
 #### 02.02. Project Overview LLD
+```mermaid
+  flowchart LR
+    User(("User"))
+
+    subgraph Testing["Testing"]
+      subgraph Frontend["Frontend"]
+      end
+      subgraph Backend["Backend"]
+      end
+    end
+
+    User --> Frontend
+    Frontend --> Backend
+```
 
 #### 02.03. Playwright Setup LLD
 
