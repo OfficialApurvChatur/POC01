@@ -78,6 +78,7 @@ Link: [https://github.com/users/OfficialApurvChatur/projects/7](https://github.c
       direction TB
       Backend["Backend"]
       Frontend["Frontend"]
+      Testing["Testing"]
     end
 
     User --> develop
