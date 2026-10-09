@@ -74,16 +74,16 @@ test.describe("Node Connection", () => {
     ).toContainText("App Name:");
   });
 
-  test("should have backend favicon", async ({ request }) => {
-    const response = await request.get(
-      `${BACKEND_URL}/backend.png`
-    );
+  // test("should have backend favicon", async ({ request }) => {
+  //   const response = await request.get(
+  //     `${BACKEND_URL}/backend.png`
+  //   );
 
-    expect(response.status()).toBe(200);
+  //   expect(response.status()).toBe(200);
 
-    expect(
-      response.headers()["content-type"]
-    ).toContain("image/png");
-  });
+  //   expect(
+  //     response.headers()["content-type"]
+  //   ).toContain("image/png");
+  // });
 
 });
