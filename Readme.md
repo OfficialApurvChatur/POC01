@@ -25,7 +25,7 @@ Link: [https://github.com/users/OfficialApurvChatur/projects/7](https://github.c
 ### 02. Low Level Design (LLD)
 
 #### 02.01. Git Branching & PR Strategies Setup LLD
-<!-- ```mermaid
+```mermaid
   sequenceDiagram
     actor Developer
     participant feature/*
@@ -44,7 +44,7 @@ Link: [https://github.com/users/OfficialApurvChatur/projects/7](https://github.c
     prod -->> develop : merge
     develop -->> Developer : pull
 
-``` -->
+```
 
 #### 02.02. Project Overview Setup LLD
 
