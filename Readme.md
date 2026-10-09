@@ -47,6 +47,20 @@ Link: [https://github.com/users/OfficialApurvChatur/projects/7](https://github.c
 ```
 
 #### 02.02. Project Overview Setup LLD
+```mermaid
+  flowchart LR
+    User(("User"))
+    subgraph Testing["Testing"]
+      subgraph Frontend["Frontend"]
+      end
+
+      subgraph Backend["Backend"]
+      end
+    end
+
+    User --> Frontend
+    Frontend --> Backend
+```
 
 #### 02.03. Environemnt Setup LLD
 
