@@ -14,7 +14,7 @@ const ReactConnection = () => {
     Environment: ${ENV}
     Machine: ${MACHINE}
     Port: ${PORT}
-    APP_NAME: ${APP_NAME}
+    App Name: ${APP_NAME}
   `);
 
   // jsx
