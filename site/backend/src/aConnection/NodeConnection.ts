@@ -17,8 +17,8 @@ class NodeConnection {
   }
 
   private createConnection() {
-    this.connection = http.createServer((request, response) => {
-      this.handleRoute(request, response);
+    this.connection = http.createServer( async (request, response) => {
+      await this.handleRoute(request, response);
     })
   }
 
@@ -35,14 +35,14 @@ class NodeConnection {
     })
   }
 
-  protected handleRoute(
+  protected async handleRoute(
     _request: http.IncomingMessage,
     _response: http.ServerResponse,
   ) {}
 }
 
 class NodeRouter extends NodeConnection {
-  protected override handleRoute(
+  protected override async handleRoute(
     request: http.IncomingMessage,
     response: http.ServerResponse,
   ) {
@@ -50,16 +50,16 @@ class NodeRouter extends NodeConnection {
 
     switch (url) {
       case "/":
-        this.indexHTMLRoute(request, response);
+        await this.indexHTMLRoute(request, response);
         return;
       case "/backend.png":
-        this.backendPNGRoute(request, response);
+        await this.backendPNGRoute(request, response);
         return;
       case "/health":
-        this.healthRoute(request, response);
+        await this.healthRoute(request, response);
         return;
       default:
-        this.defaultRoute(request, response);
+        await this.defaultRoute(request, response);
         return;
     }
   }
