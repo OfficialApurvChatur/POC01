@@ -1,8 +1,8 @@
 # POC #01 - Node & React Setup
 Production Grade - Proof of Concept - Node & React Setup
 
-## Agile Management Board
-Link: [https://github.com/users/OfficialApurvChatur/projects/7](https://github.com/users/OfficialApurvChatur/projects/7)
+Visit Agile Management Board 
+- Link: [https://github.com/users/OfficialApurvChatur/projects/7](https://github.com/users/OfficialApurvChatur/projects/7)
 
 ## System Architecture
 
