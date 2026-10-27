@@ -24,7 +24,7 @@
 ### 02. Low Level Design (LLD)
 
 #### 01.01. Git Branching & PR Strategies Setup LLD
-<!-- ```mermaid
+```mermaid
   sequenceDiagram
     actor Developer
     participant feature/*
@@ -42,7 +42,7 @@
     stage -->> prod : merge
     prod -->> develop : merge
     develop -->> Developer : pull
-``` -->
+```
 
 #### 01.02. Project Overview Setup LLD
 #### 01.03. Environmnet Setup LLD
