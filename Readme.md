@@ -45,6 +45,21 @@
 ```
 
 #### 01.02. Project Overview Setup LLD
+```mermaid
+  flowchart LR
+    User(("User"))
+    subgraph Testing["Testing"]
+      subgraph Frontend["Frontend"]
+      end
+
+      subgraph Backend["Backend"]
+      end
+    end
+
+    User --> Frontend
+    Frontend --> Backend
+```
+
 #### 01.03. Environmnet Setup LLD
 #### 01.04. Playwright Setup LLD
 #### 01.05. Servers & DNS Setup LLD
