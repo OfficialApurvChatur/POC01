@@ -93,7 +93,7 @@
 ```mermaid
   flowchart
     Developer["Developer"]
-      CLI["Commend Line Interface"]
+      CLI["Command Line Interface"]
     Tester["Tester"]
       GithubActions["Github Actions"]
     subgraph Testing["Testing"]
@@ -113,45 +113,94 @@
 ```
 
 #### 01.05. Servers & DNS Setup LLD
+```mermaid
+  flowchart
+    User["User"]
+    Domain["Domain"]
+    DNS["DNS Resolution"]
+    Server["Server"]
+    subgraph Project["Project"]
+      direction TB
+      Frontend["Frontend"]
+      Backend["Backend"]
+    end
+
+    User --> Domain
+    Domain --> DNS
+    DNS --> Server
+    Server --> Project
+```
+
 #### 01.06. CI/CD Deployment Setup LLD 
+```mermaid
+  flowchart
+    Code["Code Commit"]
+      Render["Render"]
+      Netlify["Netlify"]
+        Build["Build"]
+        Deploy["Deploy"]
+      GithubActions["Github Actions"]
+        Test["Test"]
+
+    Code --> Render
+    Code --> Netlify
+      Render --> Build
+      Netlify --> Build
+        Build --> Deploy
+    Code --> GithubActions
+      GithubActions --> Test
+```
 
 ## Servers & DNS
 
 ### Backend
 - Development
   - Local: [http://localhost:8001](http://localhost:8001)
-  - Live: []()
+  - Live: [https://poc-01-backend-develop.onrender.com](https://poc-01-backend-develop.onrender.com)
 
 - Testing
   - Local: [http://localhost:8002](http://localhost:8002)
-  - Live: []()
+  - Live: [https://poc-01-backend-test.onrender.com](https://poc-01-backend-test.onrender.com)
 
 - Staging
   - Local: [http://localhost:8003](http://localhost:8003)
-  - Live: []()
+  - Live: [https://poc-01-backend-stage.onrender.com](https://poc-01-backend-stage.onrender.com)
 
 - Production
   - Local: [http://localhost:8004](http://localhost:8004)
-  - Live: []()
+  - Live: [https://poc-01-backend-prod.onrender.com](https://poc-01-backend-prod.onrender.com)
 
 ### Frontend
 - Development
   - Local: [http://localhost:3001](http://localhost:3001)
-  - Live: []()
+  - Live: [https://poc-01-frontend-develop.netlify.app](https://poc-01-frontend-develop.netlify.app)
 
 - Testing
   - Local: [http://localhost:3002](http://localhost:3002)
-  - Live: []()
+  - Live: [https://poc-01-frontend-test.netlify.app](https://poc-01-frontend-test.netlify.app)
 
 - Staging
   - Local: [http://localhost:3003](http://localhost:3003)
-  - Live: []()
+  - Live: [https://poc-01-frontend-stage.netlify.app](https://poc-01-frontend-stage.netlify.app)
 
 - Production
   - Local: [http://localhost:3004](http://localhost:3004)
-  - Live: []()
+  - Live: [https://poc-01-frontend-prod.netlify.app](https://poc-01-frontend-prod.netlify.app)
 
 ### Testing
 - Report
   - Local: [http://localhost:9323](http://localhost:9323)
-  - Live: []()
+  - Live: [GitHub Actions](https://github.com/OfficialApurvChatur/POC01/actions)
+
+## Final Relese Presentation
+
+<p align="center">
+  <img src="./presentation/1.png" alt="Presentation Slide 1" width="300" />
+  <img src="./presentation/2.png" alt="Presentation Slide 2" width="300" />
+  <img src="./presentation/3.png" alt="Presentation Slide 3" width="300" />
+  <img src="./presentation/4.png" alt="Presentation Slide 4" width="300" />
+  <img src="./presentation/5.png" alt="Presentation Slide 5" width="300" />
+  <img src="./presentation/6.png" alt="Presentation Slide 6" width="300" />
+  <img src="./presentation/7.png" alt="Presentation Slide 7" width="300" />
+  <img src="./presentation/8.png" alt="Presentation Slide 8" width="300" />
+</p>
