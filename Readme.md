@@ -93,7 +93,7 @@
 ```mermaid
   flowchart
     Developer["Developer"]
-      CLI["Commend Line Interface"]
+      CLI["Command Line Interface"]
     Tester["Tester"]
       GithubActions["Github Actions"]
     subgraph Testing["Testing"]
@@ -132,6 +132,24 @@
 ```
 
 #### 01.06. CI/CD Deployment Setup LLD 
+```mermaid
+  flowchart
+    Code["Code Commit"]
+      Render["Render"]
+      Netlify["Netlify"]
+        Build["Build"]
+        Deploy["Deploy"]
+      GithubActions["Github Actions"]
+        Test["Test"]
+
+    Code --> Render
+    Code --> Netlify
+      Render --> Build
+      Netlify --> Build
+        Build --> Deploy
+    Code --> GithubActions
+      GithubActions --> Test
+```
 
 ## Servers & DNS
 
